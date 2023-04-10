@@ -1,3 +1,4 @@
-var value=prompt("Enter Amount:");
-var zakat=(10/100)*value;
-document.write("Total Amount After Zakat"  + ' ' + zakat);
+var zakatpercentage=2.5/100;
+var userinput=prompt("Enter Amount:");
+var result=zakatpercentage*userinput;
+document.write("Total Amount After Zakat"  + ' ' + result);
