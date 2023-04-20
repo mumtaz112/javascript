@@ -87,7 +87,7 @@ else{
 // var selectedplayer=selected;
 // document.write(selectedplayer);
 
-//Doone
+//Dne
 
 
 
