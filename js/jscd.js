@@ -52,34 +52,34 @@
 // var all=cntctname.concat(cntctnum); 
 // document.write(all);
 // Task 7
-var name=prompt('Enter Your Name');
-var nationality=prompt('Enter Your Nationality');
-var gender=prompt('Enter Your Gender');
-var age=prompt('Enter Your Age');
+// var name=prompt('Enter Your Name');
+// var nationality=prompt('Enter Your Nationality');
+// var gender=prompt('Enter Your Gender');
+// var age=prompt('Enter Your Age');
 
-if(nationality=='pakistani' && nationality == 'indian')
-{
- document.write('Eligible for vote');
-}
-else if(gender=='male' && age >=18)
-{
-    document.write('Eligible to Vote');
+// if(nationality=='pakistani' && nationality == 'indian')
+// {
+//  document.write('Eligible for vote');
+// }
+// else if(gender=='male' && age >=18)
+// {
+//     document.write('Eligible to Vote');
 
-}
+// }
 
-else if(gender=='female' && age >=18)
-{
-    var martialstat= prompt('Are You Married Or Not');
-}
-else if(martialstat=='married')
-{
-    document.write('Eligible For Vote');
+// else if(gender=='female' && age >=18)
+// {
+//     var martialstat= prompt('Are You Married Or Not');
+// }
+// else if(martialstat=='married')
+// {
+//     document.write('Eligible For Vote');
     
     
-}
-else{
-    document.write('Not Eligible For Vote')
-}
+// }
+// else{
+//     document.write('Not Eligible For Vote')
+// }
 // task 8
 // var player=["ali","faraz","Neaz","Rahul","Ganguly","Modi","Rohi,'Ayaz","Ejaz","Mumtaz","Farukh","agha","khan","umer","Hassan"];
 // var selected=[];
@@ -89,6 +89,71 @@ else{
 
 // project done
 
+//One Time Password
+// function generateotp() {
+
+//     var digits = '1234567890';
+//     var otp = '';
+//     for (i = 0; i < 4; i++) {
+//         otp += digits[Math.floor(Math.random() * 10)];
+//     }
+//     return otp;
+// }
+// console.log(generateotp());
+// check leap year between two years
+// function findLeapYears(startYear, endYear) {
+//  var leapYears = [];
+
+//   for (let year = startYear; year <= endYear; year++) {
+//     if (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)) {
+//       leapYears.push(year);
+//     }
+//   }
+
+//   return leapYears;
+// }
+
+// const leapYears = findLeapYears(2023, 2032);
+// console.log(leapYears);
+// check current year leap
+// function check_leapyear(){
+		
+		
+// 		var year = prompt('Enter year');
+
+// 		if( (0 == year % 4) && (0 != year % 100) || (0 == year % 400) )
+// 		{
+// 			alert(year+" is a leap year");  
+// 		}
+// 		else
+// 		{
+// 			alert(year+" is not a leap year");  
+// 		}
+// 	}
+//     console.log(check_leapyear());
+
+//Calculate Age 
+
+function ageCount() {
+	var date1 = new Date();
+	var  dob= prompt("Enter Date Of Birth");
+	var date2=new Date(dob);
+	var pattern = /^\d{1,2}\/\d{1,2}\/\d{4}$/; //Regex to validate date format (dd/mm/yyyy)
+	if (pattern.test(dob)) {
+		var y1 = date1.getFullYear(); 
+		var y2 = date2.getFullYear(); 
+		var age = y1 - y2;           
+		document.write("Age : " + age);
+		return true;
+	} else {
+		alert("Invalid date format. Please Input in (dd/mm/yyyy) format!");
+		return false;
+	}
+
+}
+console.log(ageCount())
 
 
 
+	
+   
