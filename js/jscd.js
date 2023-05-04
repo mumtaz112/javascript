@@ -151,9 +151,5 @@ function ageCount() {
 	}
 
 }
-console.log(ageCount())
-
-
-
-	
-   
+console.log(ageCount())	
+//Done
